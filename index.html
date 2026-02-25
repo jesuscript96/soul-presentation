@@ -11,7 +11,6 @@
     body { font-family: 'Cormorant Garamond', serif; }
     .accent { color: #ff5e00; }
     .bg-accent { background-color: #ff5e00; }
-    /* Ocultar scrollbar pero mantener funcionalidad */
     #slides::-webkit-scrollbar { display: none; }
     #slides { -ms-overflow-style: none; scrollbar-width: none; }
     .fade-in-up { animation: fadeInUp 0.7s ease-out both; }
@@ -24,13 +23,16 @@
     .stagger-3 { animation-delay: 0.45s; }
   </style>
 </head>
-<body class="bg-white text-gray-900 overflow-hidden">
+<body class="bg-white text-gray-900 overflow-hidden" data-lang="es">
+  <!-- Toggle Idioma -->
+  <button id="langToggle" class="fixed top-4 right-4 z-50 px-3 py-1 text-sm border border-gray-300 rounded-full hover:bg-gray-50 transition" aria-label="Toggle language">EN</button>
+
   <div id="slides" class="flex h-screen overflow-x-auto snap-x snap-mandatory scroll-smooth">
     <!-- Slide 0: Portada -->
     <section class="snap-start min-w-full flex flex-col items-center justify-center p-6 text-center">
       <div class="fade-in-up">
         <h1 class="text-4xl md:text-6xl font-semibold tracking-tight mb-2 accent">The Soul of the Bot</h1>
-        <p class="text-lg md:text-xl text-gray-500 font-light">OpenClaw Personality Architecture</p>
+        <p class="text-lg md:text-xl text-gray-500 font-light" data-i18n="subtitle.portada">Cómo personalizar OpenClaw</p>
       </div>
       <div class="mt-12 animate-bounce">
         <i data-lucide="arrow-down" class="w-6 h-6 text-gray-400"></i>
@@ -40,25 +42,25 @@
     <!-- Slide 1: El Corazón -->
     <section class="snap-start min-w-full flex items-center justify-center p-6">
       <div class="container mx-auto max-w-5xl h-full flex flex-col justify-center">
-        <div class="mb-4 text-sm uppercase tracking-[0.2em] text-gray-400">Parte I</div>
-        <h2 class="text-3xl md:text-4xl font-semibold mb-2 accent border-b-2 border-orange-500 inline-block pb-2">El Corazón</h2>
-        <p class="text-sm text-gray-400 mb-8">Los tres módulos que definiden la personalidad</p>
+        <div class="mb-4 text-sm uppercase tracking-[0.2em] text-gray-400" data-i18n="part1.label">Parte I</div>
+        <h2 class="text-3xl md:text-4xl font-semibold mb-2 accent border-b-2 border-orange-500 inline-block pb-2" data-i18n="part1.title">El Corazón</h2>
+        <p class="text-sm text-gray-400 mb-8" data-i18n="part1.desc">Los tres módulos que definiden la personalidad</p>
         <div class="flex flex-col md:flex-row justify-around gap-8 text-center">
           <div class="fade-in-up stagger-1">
             <div class="text-2xl font-semibold accent mb-1">SOUL.md</div>
-            <div class="text-sm text-gray-600 leading-relaxed">
+            <div class="text-sm text-gray-600 leading-relaxed" data-i18n="soul.desc">
               Define el <em>arquetipo</em> del bot (mentor, aliado, experto) y sus <em>límites morales</em>. Aquí se establecen los principios no negociables.
             </div>
           </div>
           <div class="fade-in-up stagger-2">
             <div class="text-2xl font-semibold accent mb-1">AGENTS.md</div>
-            <div class="text-sm text-gray-600 leading-relaxed">
+            <div class="text-sm text-gray-600 leading-relaxed" data-i18n="agents.desc">
               <em>Primera impresión</em>: nombre, tono de voz (¿formal, irónico, inspirador?) y saludo inicial. La voz de la marca.
             </div>
           </div>
           <div class="fade-in-up stagger-3">
             <div class="text-2xl font-semibold accent mb-1">MEMORY.md</div>
-            <div class="text-sm text-gray-600 leading-relaxed">
+            <div class="text-sm text-gray-600 leading-relaxed" data-i18n="memory.desc">
               Vinculación con la <em>CEO</em>: preferencias, sesgos positivos y lo que <em>nunca</em> debe olvidar sobre el estilo.
             </div>
           </div>
@@ -69,25 +71,25 @@
     <!-- Slide 2: El Pincel -->
     <section class="snap-start min-w-full flex items-center justify-center p-6">
       <div class="container mx-auto max-w-5xl h-full flex flex-col justify-center">
-        <div class="mb-4 text-sm uppercase tracking-[0.2em] text-gray-400">Parte II</div>
-        <h2 class="text-3xl md:text-4xl font-semibold mb-2 accent border-b-2 border-orange-500 inline-block pb-2">El Pincel</h2>
-        <p class="text-sm text-gray-400 mb-8">Criterio visual, adaptabilidad y evolución</p>
+        <div class="mb-4 text-sm uppercase tracking-[0.2em] text-gray-400" data-i18n="part2.label">Parte II</div>
+        <h2 class="text-3xl md:text-4xl font-semibold mb-2 accent border-b-2 border-orange-500 inline-block pb-2" data-i18n="part2.title">El Pincel</h2>
+        <p class="text-sm text-gray-400 mb-8" data-i18n="part2.desc">Criterio visual, adaptabilidad y evolución</p>
         <div class="flex flex-col md:flex-row justify-around gap-8 text-center">
           <div class="fade-in-up stagger-1">
             <div class="text-2xl font-semibold accent mb-1">STYLE_GUIDE.md</div>
-            <div class="text-sm text-gray-600 leading-relaxed">
-              <em>ADN visual</em>: paleta de colores, tipografía, paddings. Incluye la capacidad de definir <em>moods</em> (ej. 'lujo', 'minimal', 'energía') asociados a combinations de colores y estilos.
+            <div class="text-sm text-gray-600 leading-relaxed" data-i18n="style_guide.desc">
+              <em>ADN visual</em>: paleta de colores, tipografía, paddings. Incluye la capacidad de definir <em>moods</em> (ej. 'lujo', 'minimal', 'energía') asociados a combinaciones de colores y estilos.
             </div>
           </div>
           <div class="fade-in-up stagger-2">
             <div class="text-2xl font-semibold accent mb-1">web_design.md</div>
-            <div class="text-sm text-gray-600 leading-relaxed">
+            <div class="text-sm text-gray-600 leading-relaxed" data-i18n="web_design.desc">
               Proceso: <em>"Personalidad ante todo"</em>. El bot elige y adapta <em>templates</em> según la personalidad definida en SOUL y el mood solicitado.
             </div>
           </div>
           <div class="fade-in-up stagger-3">
             <div class="text-2xl font-semibold accent mb-1">HEARTBEAT.md</div>
-            <div class="text-sm text-gray-600 leading-relaxed">
+            <div class="text-sm text-gray-600 leading-relaxed" data-i18n="heartbeat.desc">
               <em>Mejoras proactivas</em>: detecta tendencias de diseño y sugiere ajustes al STYLE_GUIDE, manteniendo coherencia a largo plazo.
             </div>
           </div>
@@ -98,9 +100,9 @@
     <!-- Slide 3: Cierre -->
     <section class="snap-start min-w-full flex flex-col items-center justify-center p-6 text-center">
       <div class="fade-in-up">
-        <h2 class="text-2xl font-semibold mb-4 accent">Fin</h2>
-        <p class="text-sm text-gray-500 max-w-md">Presentación de la arquitectura de personalidad de OpenClaw</p>
-        <button onclick="scrollToSlide(0)" class="mt-8 px-5 py-2 border border-gray-300 rounded-full text-sm hover:bg-gray-50 transition">Volver</button>
+        <h2 class="text-2xl font-semibold mb-4 accent" data-i18n="final.title">Fin</h2>
+        <p class="text-sm text-gray-500 max-w-md" data-i18n="final.subtitle">¡Thanks Niki!</p>
+        <button onclick="scrollToSlide(0)" class="mt-8 px-5 py-2 border border-gray-300 rounded-full text-sm hover:bg-gray-50 transition" data-i18n="final.button">Volver</button>
       </div>
     </section>
   </div>
@@ -117,7 +119,70 @@
   <div id="dots" class="fixed bottom-4 left-1/2 -translate-x-1/2 flex space-x-1.5"></div>
 
   <script>
+    // Iconos
     lucide.createIcons();
+
+    // Diccionario i18n
+    const i18n = {
+      es: {
+        'subtitle.portada': 'Cómo personalizar OpenClaw',
+        'part1.label': 'Parte I',
+        'part1.title': 'El Corazón',
+        'part1.desc': 'Los tres módulos que definiden la personalidad',
+        'soul.desc': 'Define el <em>arquetipo</em> del bot (mentor, aliado, experto) y sus <em>límites morales</em>. Aquí se establecen los principios no negociables.',
+        'agents.desc': '<em>Primera impresión</em>: nombre, tono de voz (¿formal, irónico, inspirador?) y saludo inicial. La voz de la marca.',
+        'memory.desc': 'Vinculación con la <em>CEO</em>: preferencias, sesgos positivos y lo que <em>nunca</em> debe olvidar sobre el estilo.',
+        'part2.label': 'Parte II',
+        'part2.title': 'El Pincel',
+        'part2.desc': 'Criterio visual, adaptabilidad y evolución',
+        'style_guide.desc': '<em>ADN visual</em>: paleta de colores, tipografía, paddings. Incluye la capacidad de definir <em>moods</em> (ej. \'lujo\', \'minimal\', \'energía\') asociados a combinaciones de colores y estilos.',
+        'web_design.desc': 'Proceso: <em>"Personalidad ante todo"</em>. El bot elige y adapta <em>templates</em> según la personalidad definida en SOUL y el mood solicitado.',
+        'heartbeat.desc': '<em>Mejoras proactivas</em>: detecta tendencias de diseño y sugiere ajustes al STYLE_GUIDE, manteniendo coherencia a largo plazo.',
+        'final.title': 'Fin',
+        'final.subtitle': '¡Thanks Niki!',
+        'final.button': 'Volver'
+      },
+      en: {
+        'subtitle.portada': 'How to Customize OpenClaw',
+        'part1.label': 'Part I',
+        'part1.title': 'The Heart',
+        'part1.desc': 'The three modules that define personality',
+        'soul.desc': 'Defines the bot <em>archetype</em> (mentor, ally, expert) and <em>moral boundaries</em>. Non-negotiable principles are established here.',
+        'agents.desc': '<em>First impression</em>: name, voice tone (formal, ironic, inspiring?) and initial greeting. The brand\'s voice.',
+        'memory.desc': 'Link with the <em>CEO</em>: preferences, positive biases, and what to <em>never</em> forget about the style.',
+        'part2.label': 'Part II',
+        'part2.title': 'The Brush',
+        'part2.desc': 'Visual criteria, adaptability, and evolution',
+        'style_guide.desc': '<em>Visual DNA</em>: color palette, typography, paddings. Ability to define <em>moods</em> (e.g. \'luxury\', \'minimal\', \'energy\') tied to color and style combinations.',
+        'web_design.desc': 'Process: <em>"Personality first"</em>. The bot selects and adapts <em>templates</em> based on the personality in SOUL and the requested mood.',
+        'heartbeat.desc': '<em>Proactive improvements</em>: detects design trends and suggests adjustments to STYLE_GUIDE, maintaining long-term consistency.',
+        'final.title': 'End',
+        'final.subtitle': 'Thanks Niki!',
+        'final.button': 'Back'
+      }
+    };
+
+    // Aplicar idioma
+    function applyLang(lang) {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (i18n[lang] && i18n[lang][key]) {
+          el.innerHTML = i18n[lang][key];
+        }
+      });
+    }
+
+    // Toggle
+    const toggleBtn = document.getElementById('langToggle');
+    let currentLang = 'es';
+    toggleBtn.addEventListener('click', () => {
+      currentLang = currentLang === 'es' ? 'en' : 'es';
+      applyLang(currentLang);
+      toggleBtn.textContent = currentLang === 'es' ? 'EN' : 'ES';
+      document.body.setAttribute('data-lang', currentLang);
+    });
+
+    // Navegación slides
     const slides = document.getElementById('slides');
     const totalSlides = slides.children.length;
     const dotsContainer = document.getElementById('dots');
