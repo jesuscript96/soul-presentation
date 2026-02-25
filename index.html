@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Soul of the Bot</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .glass {
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 1rem;
+    }
+    /* Ocultar scrollbar pero mantener funcionalidad */
+    #slides::-webkit-scrollbar { display: none; }
+    #slides { -ms-overflow-style: none; scrollbar-width: none; }
+    /* Animaciones suaves de entrada */
+    .fade-in-up { animation: fadeInUp 0.6s ease-out both; }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .stagger-1 { animation-delay: 0.1s; }
+    .stagger-2 { animation-delay: 0.2s; }
+    .stagger-3 { animation-delay: 0.3s; }
+  </style>
+</head>
+<body class="bg-[#0a0a0a] text-gray-100 overflow-hidden">
+  <div id="slides" class="flex h-screen overflow-x-auto snap-x snap-mandatory scroll-smooth">
+    <!-- Slide 0: Portada -->
+    <section class="snap-start min-w-full flex flex-col items-center justify-center p-6 text-center">
+      <div class="fade-in-up">
+        <i data-lucide="sparkles" class="w-16 h-16 mb-4 text-white/80"></i>
+        <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-4">The Soul of the Bot</h1>
+        <p class="text-lg md:text-xl opacity-70 font-light">Arquitectura de personalidad OpenClaw</p>
+      </div>
+      <div class="mt-8 animate-bounce">
+        <i data-lucide="chevron-down" class="w-8 h-8 opacity-50"></i>
+      </div>
+    </section>
+
+    <!-- Slide 1: El Corazón -->
+    <section class="snap-start min-w-full flex items-center justify-center p-6">
+      <div class="container mx-auto max-w-6xl">
+        <div class="mb-2 text-sm uppercase tracking-widest opacity-60">Parte I</div>
+        <h2 class="text-3xl md:text-4xl font-semibold mb-2 border-b border-white/20 pb-4">El Corazón</h2>
+        <p class="text-sm md:text-base opacity-60 mb-8">Decisiones éticas, tono de voz y recuerdos duraderos</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Card SOUL -->
+          <div class="glass p-6 flex flex-col items-center text-center fade-in-up stagger-1">
+            <i data-lucide="heart" class="w-10 h-10 mb-4 text-pink-300"></i>
+            <h3 class="text-xl font-medium mb-2">SOUL.md</h3>
+            <p class="text-sm opacity-80">"Libro de Rezo": Define el arquetipo del bot, su tono y sus límites morales. Es la brújula ética.</p>
+            <div class="mt-4 text-xs font-semibold text-white/50 italic">"Da la base ética y de tono al bot"</div>
+          </div>
+          <!-- Card AGENTS -->
+          <div class="glass p-6 flex flex-col items-center text-center fade-in-up stagger-2">
+            <i data-lucide="user" class="w-10 h-10 mb-4 text-blue-300"></i>
+            <h3 class="text-xl font-medium mb-2">AGENTS.md</h3>
+            <p class="text-sm opacity-80">"La Voz": Cómo se presenta el bot. Su nombre, tono (irónico, serio) y saludo inicial.</p>
+            <div class="mt-4 text-xs font-semibold text-white/50 italic">"Establece la personalidad de interacción"</div>
+          </div>
+          <!-- Card MEMORY -->
+          <div class="glass p-6 flex flex-col items-center text-center fade-in-up stagger-3">
+            <i data-lucide="book-open" class="w-10 h-10 mb-4 text-emerald-300"></i>
+            <h3 class="text-xl font-medium mb-2">MEMORY.md</h3>
+            <p class="text-sm opacity-80">"El Vínculo": Lo que el bot aprende de la CEO. Sus sesgos positivos y lo que nunca debe olvidar sobre el estilo Nikidot.</p>
+            <div class="mt-4 text-xs font-semibold text-white/50 italic">"Personaliza respuestas según preferencias"</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 2: El Pincel -->
+    <section class="snap-start min-w-full flex items-center justify-center p-6">
+      <div class="container mx-auto max-w-6xl">
+        <div class="mb-2 text-sm uppercase tracking-widest opacity-60">Parte II</div>
+        <h2 class="text-3xl md:text-4xl font-semibold mb-2 border-b border-white/20 pb-4">El Pincel</h2>
+        <p class="text-sm md:text-base opacity-60 mb-8">Criterio visual y proceso de diseño</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Card STYLE_GUIDE -->
+          <div class="glass p-6 flex flex-col items-center text-center fade-in-up stagger-1">
+            <i data-lucide="palette" class="w-10 h-10 mb-4 text-yellow-300"></i>
+            <h3 class="text-xl font-medium mb-2">STYLE_GUIDE.md</h3>
+            <p class="text-sm opacity-80">"El ADN Visual": Define HEX, paddings, radios de borde. Es su "ojo" crítico para mantener coherencia.</p>
+            <div class="mt-4 text-xs font-semibold text-white/50 italic">"Produce diseño consistente y alineado a marca"</div>
+          </div>
+          <!-- Card SKILLS/web_design -->
+          <div class="glass p-6 flex flex-col items-center text-center fade-in-up stagger-2">
+            <i data-lucide="code" class="w-10 h-10 mb-4 text-indigo-300"></i>
+            <h3 class="text-xl font-medium mb-2">SKILLS/web_design.md</h3>
+            <p class="text-sm opacity-80">"El Criterio": Proceso lógico: "Personalidad ante todo". No solo hace webs, las hace con identidad.</p>
+            <div class="mt-4 text-xs font-semibold text-white/50 italic">"Crea webs que reflejan la personalidad"</div>
+          </div>
+          <!-- Card HEARTBEAT -->
+          <div class="glass p-6 flex flex-col items-center text-center fade-in-up stagger-3">
+            <i data-lucide="activity" class="w-10 h-10 mb-4 text-red-300"></i>
+            <h3 class="text-xl font-medium mb-2">HEARTBEAT.md</h3>
+            <p class="text-sm opacity-80">"La Intuición": Sugiere mejoras de diseño proactivamente basándose en tendencias guardadas.</p>
+            <div class="mt-4 text-xs font-semibold text-white/50 italic">"Evoluciona el diseño sin interrupción"</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 3: Cierre -->
+    <section class="snap-start min-w-full flex flex-col items-center justify-center p-6 text-center">
+      <div class="fade-in-up">
+        <i data-lucide="at-sign" class="w-16 h-16 mb-4 text-white/60"></i>
+        <h2 class="text-3xl font-semibold mb-2">Fin</h2>
+        <p class="opacity-60 max-w-md">Presentación de la arquitectura de personalidad de OpenClaw</p>
+        <button onclick="scrollToSlide(0)" class="mt-6 px-4 py-2 glass rounded-full text-sm hover:bg-white/10 transition">Volver al inicio</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- Navegación: flechas laterales -->
+  <button id="prevBtn" class="fixed left-4 top-1/2 -translate-y-1/2 p-3 glass rounded-full hover:bg-white/20 transition" aria-label="Anterior">
+    <i data-lucide="chevron-left" class="w-6 h-6"></i>
+  </button>
+  <button id="nextBtn" class="fixed right-4 top-1/2 -translate-y-1/2 p-3 glass rounded-full hover:bg-white/20 transition" aria-label="Siguiente">
+    <i data-lucide="chevron-right" class="w-6 h-6"></i>
+  </button>
+
+  <!-- Indicadores de progreso -->
+  <div id="dots" class="fixed bottom-6 left-1/2 -translate-x-1/2 flex space-x-2"></div>
+
+  <script>
+    // Iconos
+    lucide.createIcons();
+
+    const slides = document.getElementById('slides');
+    const totalSlides = slides.children.length;
+    const dotsContainer = document.getElementById('dots');
+
+    // Crear puntos
+    for (let i = 0; i < totalSlides; i++) {
+      const dot = document.createElement('button');
+      dot.className = 'w-2 h-2 rounded-full bg-white/40 hover:bg-white/80 transition';
+      dot.setAttribute('aria-label', `Ir a diapositiva ${i+1}`);
+      dot.onclick = () => scrollToSlide(i);
+      dotsContainer.appendChild(dot);
+    }
+
+    const dots = dotsContainer.children;
+
+    function updateDots() {
+      const scrollLeft = slides.scrollLeft;
+      const w = slides.clientWidth;
+      const index = Math.round(scrollLeft / w);
+      for (let i = 0; i < totalSlides; i++) {
+        dots[i].classList.toggle('bg-white/80', i === index);
+        dots[i].classList.toggle('bg-white/40', i !== index);
+      }
+    }
+
+    function scrollToSlide(index) {
+      slides.scrollTo({ left: index * slides.clientWidth, behavior: 'smooth' });
+    }
+
+    document.getElementById('prevBtn').onclick = (e) => {
+      e.preventDefault();
+      const newIndex = Math.max(0, Math.round(slides.scrollLeft / slides.clientWidth) - 1);
+      scrollToSlide(newIndex);
+    };
+    document.getElementById('nextBtn').onclick = (e) => {
+      e.preventDefault();
+      const newIndex = Math.min(totalSlides - 1, Math.round(slides.scrollLeft / slides.clientWidth) + 1);
+      scrollToSlide(newIndex);
+    };
+
+    slides.addEventListener('scroll', updateDots);
+    // Inicializar
+    updateDots();
+
+    // Soporte teclado
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') document.getElementById('prevBtn').click();
+      if (e.key === 'ArrowRight') document.getElementById('nextBtn').click();
+    });
+  </script>
+</body>
+</html>
