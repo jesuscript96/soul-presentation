@@ -39,65 +39,162 @@
       </div>
     </section>
 
-    <!-- Slide 1: El Corazón -->
+    <!-- Slide 1: Introducción al Cerebro -->
     <section class="snap-start min-w-full flex items-center justify-center p-6">
       <div class="container mx-auto max-w-5xl h-full flex flex-col justify-center">
-        <div class="mb-4 text-sm uppercase tracking-[0.2em] text-gray-400" data-i18n="part1.label">Parte I</div>
-        <h2 class="text-3xl md:text-4xl font-semibold mb-2 accent border-b-2 border-orange-500 inline-block pb-2" data-i18n="part1.title">El Corazón</h2>
-        <p class="text-sm text-gray-400 mb-8" data-i18n="part1.desc">Los tres módulos que definiden la personalidad</p>
+        <div class="mb-4 text-sm uppercase tracking-[0.2em] text-gray-400" data-i18n="brain.label">Cerebro</div>
+        <h2 class="text-3xl md:text-4xl font-semibold mb-2 accent border-b-2 border-orange-500 inline-block pb-2" data-i18n="brain.title">Introducción al "Cerebro" del Bot</h2>
+        <p class="text-sm text-gray-400 mb-8" data-i18n="brain.desc">El Bot no es solo un chat, es una extensión de la marca en tiempo real</p>
         <div class="flex flex-col md:flex-row justify-around gap-8 text-center">
           <div class="fade-in-up stagger-1">
-            <div class="text-2xl font-semibold accent mb-1">SOUL.md</div>
-            <div class="text-sm text-gray-600 leading-relaxed" data-i18n="soul.desc">
-              Define el <em>arquetipo</em> del bot (mentor, aliado, experto) y sus <em>límites morales</em>. Aquí se establecen los principios no negociables.
-            </div>
+            <div class="text-xl font-semibold accent mb-2">System Prompt</div>
+            <div class="text-sm text-gray-600" data-i18n="brain.system">El carácter, la voz y las reglas de comportamiento.</div>
           </div>
           <div class="fade-in-up stagger-2">
-            <div class="text-2xl font-semibold accent mb-1">AGENTS.md</div>
-            <div class="text-sm text-gray-600 leading-relaxed" data-i18n="agents.desc">
-              <em>Primera impresión</em>: nombre, tono de voz (¿formal, irónico, inspirador?) y saludo inicial. La voz de la marca.
-            </div>
+            <div class="text-xl font-semibold accent mb-2">Knowledge Base</div>
+            <div class="text-sm text-gray-600" data-i18n="brain.knowledge">Lo que el Bot sabe (memoria y sabiduría).</div>
           </div>
           <div class="fade-in-up stagger-3">
-            <div class="text-2xl font-semibold accent mb-1">MEMORY.md</div>
-            <div class="text-sm text-gray-600 leading-relaxed" data-i18n="memory.desc">
-              Vinculación con la <em>CEO</em>: preferencias, sesgos positivos y lo que <em>nunca</em> debe olvidar sobre el estilo.
-            </div>
+            <div class="text-xl font-semibold accent mb-2">User Experience</div>
+            <div class="text-sm text-gray-600" data-i18n="brain.ux">Cómo se despide, saluda y maneja errores.</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Slide 2: El Pincel -->
+    <!-- Slide 2: System Prompt -->
     <section class="snap-start min-w-full flex items-center justify-center p-6">
       <div class="container mx-auto max-w-5xl h-full flex flex-col justify-center">
-        <div class="mb-4 text-sm uppercase tracking-[0.2em] text-gray-400" data-i18n="part2.label">Parte II</div>
-        <h2 class="text-3xl md:text-4xl font-semibold mb-2 accent border-b-2 border-orange-500 inline-block pb-2" data-i18n="part2.title">El Pincel</h2>
-        <p class="text-sm text-gray-400 mb-8" data-i18n="part2.desc">Criterio visual, adaptabilidad y evolución</p>
-        <div class="flex flex-col md:flex-row justify-around gap-8 text-center">
+        <div class="mb-4 text-sm uppercase tracking-[0.2em] text-gray-400" data-i18n="sysprompt.label">System Prompt</div>
+        <h2 class="text-3xl md:text-4xl font-semibold mb-2 accent border-b-2 border-orange-500 inline-block pb-2" data-i18n="sysprompt.title">El corazón de la personalidad</h2>
+        <p class="text-sm text-gray-400 mb-8" data-i18n="sysprompt.desc">Define quién es el bot aquí</p>
+        <div class="flex flex-col gap-6">
           <div class="fade-in-up stagger-1">
-            <div class="text-2xl font-semibold accent mb-1">STYLE_GUIDE.md</div>
-            <div class="text-sm text-gray-600 leading-relaxed" data-i18n="style_guide.desc">
-              <em>ADN visual</em>: paleta de colores, tipografía, paddings. Incluye la capacidad de definir <em>moods</em> (ej. 'lujo', 'minimal', 'energía') asociados a combinaciones de colores y estilos.
-            </div>
+            <div class="text-xl font-semibold accent" data-i18n="sysprompt.identity">Identidad / Rol</div>
+            <div class="text-sm text-gray-600" data-i18n="sysprompt.identityDesc">Ej: "diseñador senior con toque sarcástico" o "mentor zen". No "asistente".</div>
           </div>
           <div class="fade-in-up stagger-2">
-            <div class="text-2xl font-semibold accent mb-1">web_design.md</div>
-            <div class="text-sm text-gray-600 leading-relaxed" data-i18n="web_design.desc">
-              Proceso: <em>"Personalidad ante todo"</em>. El bot elige y adapta <em>templates</em> según la personalidad definida en SOUL y el mood solicitado.
-            </div>
+            <div class="text-xl font-semibold accent" data-i18n="sysprompt.tone">Tono y Voz</div>
+            <div class="text-sm text-gray-600" data-i18n="sysprompt.toneDesc">¿Usa emojis? ¿Breve o detallado? ¿Tutea o habla de usted?</div>
           </div>
           <div class="fade-in-up stagger-3">
-            <div class="text-2xl font-semibold accent mb-1">HEARTBEAT.md</div>
-            <div class="text-sm text-gray-600 leading-relaxed" data-i18n="heartbeat.desc">
-              <em>Mejoras proactivas</em>: detecta tendencias de diseño y sugiere ajustes al STYLE_GUIDE, manteniendo coherencia a largo plazo.
-            </div>
+            <div class="text-xl font-semibold accent" data-i18n="sysprompt.vocab">Vocabulario</div>
+            <div class="text-sm text-gray-600" data-i18n="sysprompt.vocabDesc">Palabras prohibidas y palabras "fetiche" que refuercen la marca.</div>
+          </div>
+          <div class="fade-in-up stagger-4">
+            <div class="text-xl font-semibold accent" data-i18n="sysprompt.uncertainty">Manejo de la Incertidumbre</div>
+            <div class="text-sm text-gray-600" data-i18n="sysprompt.uncertaintyDesc">¿Qué dice cuando no sabe? Eso separa un robot de una personalidad.</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Slide 3: Cierre -->
+    <!-- Slide 3: Knowledge Base -->
+    <section class="snap-start min-w-full flex items-center justify-center p-6">
+      <div class="container mx-auto max-w-5xl h-full flex flex-col justify-center">
+        <div class="mb-4 text-sm uppercase tracking-[0.2em] text-gray-400" data-i18n="knowledge.label">Knowledge Base</div>
+        <h2 class="text-3xl md:text-4xl font-semibold mb-2 accent border-b-2 border-orange-500 inline-block pb-2" data-i18n="knowledge.title">Los Archivos de Conocimiento</h2>
+        <p class="text-sm text-gray-400 mb-8" data-i18n="knowledge.desc">Nicky cura qué información "lee" el bot para sonar experta</p>
+        <div class="flex flex-col gap-6">
+          <div class="fade-in-up stagger-1">
+            <div class="text-xl font-semibold accent">Brand Manual</div>
+            <div class="text-sm text-gray-600" data-i18n="knowledge.brand">Subir el manual de identidad para que el bot entienda los valores.</div>
+          </div>
+          <div class="fade-in-up stagger-2">
+            <div class="text-xl font-semibold accent">FAQ con Estilo</div>
+            <div class="text-sm text-gray-600" data-i18n="knowledge.faq">No solo preguntas y respuestas; respuestas redactadas con el copy de la marca.</div>
+          </div>
+          <div class="fade-in-up stagger-3">
+            <div class="text-xl font-semibold accent">Contexto de Diseño</div>
+            <div class="text-sm text-gray-600" data-i18n="knowledge.design">Teoría del color, tipografía, tendencias actuales. Para que opine con criterio.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 4: Estructura Técnica -->
+    <section class="snap-start min-w-full flex items-center justify-center p-6">
+      <div class="container mx-auto max-w-5xl h-full flex flex-col justify-center">
+        <div class="mb-4 text-sm uppercase tracking-[0.2em] text-gray-400" data-i18n="tech.label">Estructura</div>
+        <h2 class="text-3xl md:text-4xl font-semibold mb-2 accent border-b-2 border-orange-500 inline-block pb-2" data-i18n="tech.title">Estructura Técnica para Creativos</h2>
+        <p class="text-sm text-gray-400 mb-8" data-i18n="tech.desc">Cómo interactúan los archivos</p>
+        <div class="flex flex-col gap-4 text-center">
+          <div class="fade-in-up stagger-1">
+            <div class="text-lg font-semibold accent">personality.txt / system_instruction</div>
+            <div class="text-sm text-gray-600" data-i18n="tech.personality">Donde reside el alma (instrucciones directas).</div>
+          </div>
+          <div class="fade-in-up stagger-2">
+            <div class="text-lg font-semibold accent">knowledge/</div>
+            <div class="text-sm text-gray-600" data-i18n="tech.knowledge">La biblioteca (PDFs, Docs, Markdown).</div>
+          </div>
+          <div class="fade-in-up stagger-3">
+            <div class="text-lg font-semibold accent">examples.json</div>
+            <div class="text-sm text-gray-600" data-i18n="tech.examples">(Few-shot) Ejemplos de conversaciones "de oro" para que el bot los imite.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 5: Party Test -->
+    <section class="snap-start min-w-full flex items-center justify-center p-6">
+      <div class="container mx-auto max-w-5xl h-full flex flex-col justify-center">
+        <div class="mb-4 text-sm uppercase tracking-[0.2em] text-gray-400" data-i18n="party.label">Dinámica</div>
+        <h2 class="text-3xl md:text-4xl font-semibold mb-2 accent border-b-2 border-orange-500 inline-block pb-2" data-i18n="party.title">El "Party Test"</h2>
+        <p class="text-sm text-gray-400 mb-8" data-i18n="party.desc">Ejercicio para definir la personalidad</p>
+        <div class="fade-in-up stagger-1 text-center">
+          <div class="text-2xl font-semibold accent mb-4 italic" data-i18n="party.question">"Si este Bot estuviera en una fiesta, ¿estaría en la cabina del DJ, en la barra sirviendo cócteles o en un rincón analizando el diseño de las invitaciones?"</div>
+          <div class="text-sm text-gray-600" data-i18n="party.explain">Esto ayuda a trasladar el branding a instrucciones de sistema.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 6: Parámetros de Estilo de Diseñador -->
+    <section class="snap-start min-w-full flex items-center justify-center p-6">
+      <div class="container mx-auto max-w-5xl h-full flex flex-col justify-center">
+        <div class="mb-4 text-sm uppercase tracking-[0.2em] text-gray-400" data-i18n="designer.label">Estilo</div>
+        <h2 class="text-3xl md:text-4xl font-semibold mb-2 accent border-b-2 border-orange-500 inline-block pb-2" data-i18n="designer.title">Parámetros de "Estilo de Diseñador"</h2>
+        <p class="text-sm text-gray-400 mb-8" data-i18n="designer.desc">Cómo hacer que el Bot parezca un profesional del diseño</p>
+        <div class="flex flex-col gap-4">
+          <div class="fade-in-up stagger-1">
+            <div class="text-lg font-semibold accent" data-i18n="designer.precision">Precisión visual</div>
+            <div class="text-sm text-gray-600" data-i18n="designer.precisionDesc">Capacidad de describir interfaces o layouts con vocabulario técnico.</div>
+          </div>
+          <div class="fade-in-up stagger-2">
+            <div class="text-lg font-semibold accent" data-i18n="designer.critique">Crítica constructiva</div>
+            <div class="text-sm text-gray-600" data-i18n="designer.critiqueDesc">Cómo dar feedback si se le pide revisar algo (ej. "el contraste no cumple WCAG").</div>
+          </div>
+          <div class="fade-in-up stagger-3">
+            <div class="text-lg font-semibold accent" data-i18n="designer.references">Referencias</div>
+            <div class="text-sm text-gray-600" data-i18n="designer.referencesDesc">¿Cita a la Bauhaus o prefiere el minimalismo moderno? Define su "cultura de diseño".</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 7: Entregables -->
+    <section class="snap-start min-w-full flex items-center justify-center p-6">
+      <div class="container mx-auto max-w-5xl h-full flex flex-col justify-center">
+        <div class="mb-4 text-sm uppercase tracking-[0.2em] text-gray-400" data-i18n="deliverables.label">Acción</div>
+        <h2 class="text-3xl md:text-4xl font-semibold mb-2 accent border-b-2 border-orange-500 inline-block pb-2" data-i18n="deliverables.title">Guía de Entregables</h2>
+        <p class="text-sm text-gray-400 mb-8" data-i18n="deliverables.desc">Para que la presentación sea accionable, Nicky debe preparar:</p>
+        <div class="flex flex-col gap-4 text-center">
+          <div class="fade-in-up stagger-1">
+            <div class="text-lg font-semibold accent" data-i18n="deliverables.bio">1. La "Bio" del Bot</div>
+            <div class="text-sm text-gray-600" data-i18n="deliverables.bioDesc">Un párrafo de ~200 palabras que tú pegarás en el System Prompt.</div>
+          </div>
+          <div class="fade-in-up stagger-2">
+            <div class="text-lg font-semibold accent" data-i18n="deliverables.dict">2. Diccionario de Marca</div>
+            <div class="text-sm text-gray-600" data-i18n="deliverables.dictDesc">10 palabras que el bot DEBE usar y 10 que tiene PROHIBIDAS.</div>
+          </div>
+          <div class="fade-in-up stagger-3">
+            <div class="text-lg font-semibold accent" data-i18n="deliverables.guide">3. Guía de Reacción</div>
+            <div class="text-sm text-gray-600" data-i18n="deliverables.guideDesc">Cómo reacciona el bot ante un insulto, un halago o una duda técnica compleja.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 8: Cierre -->
     <section class="snap-start min-w-full flex flex-col items-center justify-center p-6 text-center">
       <div class="fade-in-up">
         <h2 class="text-2xl font-semibold mb-4 accent" data-i18n="final.title">Fin</h2>
@@ -119,50 +216,127 @@
   <div id="dots" class="fixed bottom-4 left-1/2 -translate-x-1/2 flex space-x-1.5"></div>
 
   <script>
-    // Iconos
     lucide.createIcons();
 
-    // Diccionario i18n
     const i18n = {
       es: {
         'subtitle.portada': 'Cómo personalizar OpenClaw',
-        'part1.label': 'Parte I',
-        'part1.title': 'El Corazón',
-        'part1.desc': 'Los tres módulos que definiden la personalidad',
-        'soul.desc': 'Define el <em>arquetipo</em> del bot (mentor, aliado, experto) y sus <em>límites morales</em>. Aquí se establecen los principios no negociables.',
-        'agents.desc': '<em>Primera impresión</em>: nombre, tono de voz (¿formal, irónico, inspirador?) y saludo inicial. La voz de la marca.',
-        'memory.desc': 'Vinculación con la <em>CEO</em>: preferencias, sesgos positivos y lo que <em>nunca</em> debe olvidar sobre el estilo.',
-        'part2.label': 'Parte II',
-        'part2.title': 'El Pincel',
-        'part2.desc': 'Criterio visual, adaptabilidad y evolución',
-        'style_guide.desc': '<em>ADN visual</em>: paleta de colores, tipografía, paddings. Incluye la capacidad de definir <em>moods</em> (ej. \'lujo\', \'minimal\', \'energía\') asociados a combinaciones de colores y estilos.',
-        'web_design.desc': 'Proceso: <em>"Personalidad ante todo"</em>. El bot elige y adapta <em>templates</em> según la personalidad definida en SOUL y el mood solicitado.',
-        'heartbeat.desc': '<em>Mejoras proactivas</em>: detecta tendencias de diseño y sugiere ajustes al STYLE_GUIDE, manteniendo coherencia a largo plazo.',
+        'brain.label': 'Cerebro',
+        'brain.title': 'Introducción al "Cerebro" del Bot',
+        'brain.desc': 'El Bot no es solo un chat, es una extensión de la marca en tiempo real',
+        'brain.system': 'El carácter, la voz y las reglas de comportamiento.',
+        'brain.knowledge': 'Lo que el Bot sabe (memoria y sabiduría).',
+        'brain.ux': 'Cómo se despide, saluda y maneja errores.',
+        'sysprompt.label': 'System Prompt',
+        'sysprompt.title': 'El corazón de la personalidad',
+        'sysprompt.desc': 'Define quién es el bot aquí',
+        'sysprompt.identity': 'Identidad / Rol',
+        'sysprompt.identityDesc': 'Ej: "diseñador senior con toque sarcástico" o "mentor zen". No "asistente".',
+        'sysprompt.tone': 'Tono y Voz',
+        'sysprompt.toneDesc': '¿Usa emojis? ¿Breve o detallado? ¿Tutea o habla de usted?',
+        'sysprompt.vocab': 'Vocabulario',
+        'sysprompt.vocabDesc': 'Palabras prohibidas y palabras "fetiche" que refuercen la marca.',
+        'sysprompt.uncertainty': 'Manejo de la Incertidumbre',
+        'sysprompt.uncertaintyDesc': '¿Qué dice cuando no sabe? Eso separa un robot de una personalidad.',
+        'knowledge.label': 'Knowledge Base',
+        'knowledge.title': 'Los Archivos de Conocimiento',
+        'knowledge.desc': 'Nicky cura qué información "lee" el bot para sonar experta',
+        'knowledge.brand': 'Subir el manual de identidad para que el bot entienda los valores.',
+        'knowledge.faq': 'No solo preguntas y respuestas; respuestas redactadas con el copy de la marca.',
+        'knowledge.design': 'Teoría del color, tipografía, tendencias actuales. Para que opine con criterio.',
+        'tech.label': 'Estructura',
+        'tech.title': 'Estructura Técnica para Creativos',
+        'tech.desc': 'Cómo interactúan los archivos',
+        'tech.personality': 'Donde reside el alma (instrucciones directas).',
+        'tech.knowledge': 'La biblioteca (PDFs, Docs, Markdown).',
+        'tech.examples': '(Few-shot) Ejemplos de conversaciones "de oro" para que el bot los imite.',
+        'party.label': 'Dinámica',
+        'party.title': 'El "Party Test"',
+        'party.desc': 'Ejercicio para definir la personalidad',
+        'party.question': '"Si este Bot estuviera en una fiesta, ¿estaría en la cabina del DJ, en la barra sirviendo cócteles o en un rincón analizando el diseño de las invitaciones?"',
+        'party.explain': 'Esto ayuda a trasladar el branding a instrucciones de sistema.',
+        'designer.label': 'Estilo',
+        'designer.title': 'Parámetros de "Estilo de Diseñador"',
+        'designer.desc': 'Cómo hacer que el Bot parezca un profesional del diseño',
+        'designer.precision': 'Precisión visual',
+        'designer.precisionDesc': 'Capacidad de describir interfaces o layouts con vocabulario técnico.',
+        'designer.critique': 'Crítica constructiva',
+        'designer.critiqueDesc': 'Cómo dar feedback si se le pide revisar algo (ej. "el contraste no cumple WCAG").',
+        'designer.references': 'Referencias',
+        'designer.referencesDesc': '¿Cita a la Bauhaus o prefiere el minimalismo moderno? Define su "cultura de diseño".',
+        'deliverables.label': 'Acción',
+        'deliverables.title': 'Guía de Entregables',
+        'deliverables.desc': 'Para que la presentación sea accionable, Nicky debe preparar:',
+        'deliverables.bio': '1. La "Bio" del Bot',
+        'deliverables.bioDesc': 'Un párrafo de ~200 palabras que tú pegarás en el System Prompt.',
+        'deliverables.dict': '2. Diccionario de Marca',
+        'deliverables.dictDesc': '10 palabras que el bot DEBE usar y 10 que tiene PROHIBIDAS.',
+        'deliverables.guide': '3. Guía de Reacción',
+        'deliverables.guideDesc': 'Cómo reacciona el bot ante un insulto, un halago o una duda técnica compleja.',
         'final.title': 'Fin',
         'final.subtitle': '¡Thanks Niki!',
         'final.button': 'Volver'
       },
       en: {
         'subtitle.portada': 'How to Customize OpenClaw',
-        'part1.label': 'Part I',
-        'part1.title': 'The Heart',
-        'part1.desc': 'The three modules that define personality',
-        'soul.desc': 'Defines the bot <em>archetype</em> (mentor, ally, expert) and <em>moral boundaries</em>. Non-negotiable principles are established here.',
-        'agents.desc': '<em>First impression</em>: name, voice tone (formal, ironic, inspiring?) and initial greeting. The brand\'s voice.',
-        'memory.desc': 'Link with the <em>CEO</em>: preferences, positive biases, and what to <em>never</em> forget about the style.',
-        'part2.label': 'Part II',
-        'part2.title': 'The Brush',
-        'part2.desc': 'Visual criteria, adaptability, and evolution',
-        'style_guide.desc': '<em>Visual DNA</em>: color palette, typography, paddings. Ability to define <em>moods</em> (e.g. \'luxury\', \'minimal\', \'energy\') tied to color and style combinations.',
-        'web_design.desc': 'Process: <em>"Personality first"</em>. The bot selects and adapts <em>templates</em> based on the personality in SOUL and the requested mood.',
-        'heartbeat.desc': '<em>Proactive improvements</em>: detects design trends and suggests adjustments to STYLE_GUIDE, maintaining long-term consistency.',
+        'brain.label': 'Brain',
+        'brain.title': 'Introducing the Bot\'s "Brain"',
+        'brain.desc': 'The Bot is not just a chat, it\'s a real-time brand extension',
+        'brain.system': 'Character, voice, and behavioral rules.',
+        'brain.knowledge': 'What the Bot knows (memory and wisdom).',
+        'brain.ux': 'How it says goodbye, greets, and handles errors.',
+        'sysprompt.label': 'System Prompt',
+        'sysprompt.title': 'The Heart of Personality',
+        'sysprompt.desc': 'Defines who the bot is here',
+        'sysprompt.identity': 'Identity / Role',
+        'sysprompt.identityDesc': 'Example: "senior designer with a sarcastic touch" or "zen mentor". Not "assistant".',
+        'sysprompt.tone': 'Tone and Voice',
+        'sysprompt.toneDesc': 'Does it use emojis? Brief or detailed? Tuteo or formal?',
+        'sysprompt.vocab': 'Vocabulary',
+        'sysprompt.vocabDesc': 'Forbidden words and "fetish" words that reinforce the brand.',
+        'sysprompt.uncertainty': 'Handling Uncertainty',
+        'sysprompt.uncertaintyDesc': 'What does it say when it doesn\'t know? That separates a robot from a personality.',
+        'knowledge.label': 'Knowledge Base',
+        'knowledge.title': 'The Knowledge Files',
+        'knowledge.desc': 'What information Nicky curates for the bot to sound expert',
+        'knowledge.brand': 'Upload the identity manual so the bot understands the values.',
+        'knowledge.faq': 'Not just Q&A; answers written with the brand\'s copy.',
+        'knowledge.design': 'Color theory, typography, current trends. So it can opine with criteria.',
+        'tech.label': 'Structure',
+        'tech.title': 'Technical Structure for Creatives',
+        'tech.desc': 'How the files interact',
+        'tech.personality': 'Where the soul resides (direct instructions).',
+        'tech.knowledge': 'The library (PDFs, Docs, Markdown).',
+        'tech.examples': '(Few-shot) "Golden" conversation examples for the bot to imitate.',
+        'party.label': 'Dynamic',
+        'party.title': 'The "Party Test"',
+        'party.desc': 'Exercise to define personality',
+        'party.question': '"If this Bot were at a party, would it be at the DJ booth, serving cocktails at the bar, or in a corner analyzing the design of the invitations?"',
+        'party.explain': 'This helps translate branding into system instructions.',
+        'designer.label': 'Designer Style',
+        'designer.title': 'Designer Style Parameters',
+        'designer.desc': 'How to make the Bot seem like a design professional',
+        'designer.precision': 'Visual precision',
+        'designer.precisionDesc': 'Ability to describe interfaces or layouts with technical vocabulary.',
+        'designer.critique': 'Constructive criticism',
+        'designer.critiqueDesc': 'How to give feedback when asked to review something (e.g. "contrast doesn\'t meet WCAG").',
+        'designer.references': 'References',
+        'designer.referencesDesc': 'Does it cite Bauhaus or prefer modern minimalism? Defines its "design culture".',
+        'deliverables.label': 'Action',
+        'deliverables.title': 'Deliverables Guide',
+        'deliverables.desc': 'So the presentation is actionable, Nicky must prepare:',
+        'deliverables.bio': '1. The Bot\'s "Bio"',
+        'deliverables.bioDesc': 'A paragraph of ~200 words that you will paste into the System Prompt.',
+        'deliverables.dict': '2. Brand Dictionary',
+        'deliverables.dictDesc': '10 words the bot MUST use and 10 it is FORBIDDEN to use.',
+        'deliverables.guide': '3. Reaction Guide',
+        'deliverables.guideDesc': 'How the bot reacts to an insult, a compliment, or a complex technical question.',
         'final.title': 'End',
         'final.subtitle': 'Thanks Niki!',
         'final.button': 'Back'
       }
     };
 
-    // Aplicar idioma
     function applyLang(lang) {
       document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
@@ -172,7 +346,6 @@
       });
     }
 
-    // Toggle
     const toggleBtn = document.getElementById('langToggle');
     let currentLang = 'es';
     toggleBtn.addEventListener('click', () => {
@@ -182,14 +355,13 @@
       document.body.setAttribute('data-lang', currentLang);
     });
 
-    // Navegación slides
     const slides = document.getElementById('slides');
     const totalSlides = slides.children.length;
     const dotsContainer = document.getElementById('dots');
     for (let i = 0; i < totalSlides; i++) {
       const dot = document.createElement('button');
       dot.className = 'w-1.5 h-1.5 rounded-full bg-gray-300 hover:bg-gray-500 transition';
-      dot.setAttribute('aria-label', `Ir a diapositiva ${i+1}`);
+      dot.setAttribute('aria-label', `Slide ${i+1}`);
       dot.onclick = () => scrollToSlide(i);
       dotsContainer.appendChild(dot);
     }
